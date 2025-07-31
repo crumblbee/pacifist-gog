@@ -9,7 +9,7 @@ Upon dying, a grave and dirt-block are placed. When respawning, unfortunately, y
 
 However, pacifists must concern themselves with mobs at night: Spawned mobs could hurt each other, or could follow you into the void and taking damage. Thus, pacifists must wait out the night in the void, not pressing the "respawn" button until the night is over. The same goes for thunderstorms. A night takes 10 minutes. If you forget to set a timer for the night, you can check the log file of your minecraft instance, e.g. mentioning the time (real, not ingame) of your most recent death.
 
-<img width="1920" height="1080" alt="22×20 spawn platform of dirt-blocks, covered in graves" src="https://github.com/user-attachments/assets/4ca3fe9d-791f-44a2-8b1a-744ca016e888" />
+![22×20 spawn platform of dirt-blocks, covered in graves](assets/spawn-platform.png)
 
 After spending at least 80 minutes dying painfully, you have your spawn-platform! Check for slime-chunks, and place journeymap-waypoints at the four corners of the platform.
 
@@ -29,8 +29,9 @@ In total, I decided to get at least 5000 dirt. Exploding dirt-creepers is banned
 
 <details>
   <summary>My stats after farming </summary>
-  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/00559265-80be-427b-bc67-50c45af8aa90" />
-  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/27f9849b-25fe-454e-8650-adba7586564d" />
+  
+  ![10.91h playtime, 6.63h AFK, 3.35km walked, 5272 deaths, 865448 damage taken, 0 damage dealt, 0 kills.](assets/stats/farming-dirt-0.png)
+  ![4810 dirt mined, 4813 graves mined](assets/stats/farming-dirt-1.png)
 </details>
 
 ### How to farm dirt

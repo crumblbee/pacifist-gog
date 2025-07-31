@@ -1,0 +1,83 @@
+When spawning in, you will immediately fall into the void. Toss away your quest-book and make sure the difficulty is set to Hard. Depending on your ruleset, consider tossing the world if you don't like the biome (I avoided tossing).
+
+
+
+
+## Creating the Spawn-Platform
+
+Upon dying, a grave and dirt-block are placed. When respawning, unfortunately, you are not guaranteed to respawn on that newly-created block. Instead, you will respawn at a position chosen randomly (uniformly) from a 20×20 square area of blocks. Later on, we will want to ensure we can respawn on solid ground, so you will have to die over and over again until all 400 possible spawn-positions are filled with graves. Each death taking about 6 seconds, this whole process will take at least 40 minutes.
+
+However, pacifists must concern themselves with mobs at night: Spawned mobs could hurt each other, or could follow you into the void and taking damage. Thus, pacifists must wait out the night in the void, not pressing the "respawn" button until the night is over. The same goes for thunderstorms. A night takes 10 minutes. If you forget to set a timer for the night, you can check the log file of your minecraft instance, e.g. mentioning the time (real, not ingame) of your most recent death.
+
+<img width="1920" height="1080" alt="22×20 spawn platform of dirt-blocks, covered in graves" src="https://github.com/user-attachments/assets/4ca3fe9d-791f-44a2-8b1a-744ca016e888" />
+
+After spending at least 80 minutes dying painfully, you have your spawn-platform! Check for slime-chunks, and place journeymap-waypoints at the four corners of the platform.
+
+
+## Getting More Dirt
+
+Sadly, the pain has just begun. For an early mob-farm and later projects, pacifists will need a lot more dirt. You will need:
+
+- 400 dirt for your spawn-platform (these are already placed now, congrats!)
+- At least 1250 dirt (about 19.5 stacks) for the water-cage in the warp-age <!-- TODO: add link -->
+- If you plan on building a water-containment-platform, at least an additional 2500 dirt (about 39 stacks). This is somewhat optional, but if you mess up during the warp-age, you can cause squid to spawn and fall into the void. If that happens, it feels appropriate for my run to be forfeit, as such an accident could have been prevented by building the water-containment-platform, so I will treat the water-containment-platform as required.
+- A decent amount of additional dirt for bridges and an early mob-farm.
+
+Later on, ic2-crops will also require lots of dirt, but it will be easier to get by that point, and we will conveniently be able to farm dirt for an additional 8 hours for basically free while we're transitioning from the dirt-age to the warp-age.
+
+In total, I decided to get at least 5000 dirt. Exploding dirt-creepers is banned by the ruleset. At 6 seconds per death, farming 5000 dirt via grave-dirt takes at least 8 hours, _not_ counting time spent idling in the void at night or during thunderstorms.
+
+<details>
+  <summary>My stats after farming </summary>
+  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/00559265-80be-427b-bc67-50c45af8aa90" />
+  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/27f9849b-25fe-454e-8650-adba7586564d" />
+</details>
+
+### How to farm dirt
+
+If you just dig a dirt-block while standing on an adjacent one, you most likely won't be able to catch the dirt. One method involves creating a bridge below your platform (grave-dirt will only spawn above y=4, so there is a little space below) and standing beneath the dirt while digging it. The method I used instead catches the dirt by jumping after it into the void:
+
+1. Spawn in, look down
+2. Walk slightly to the left so that you're on an adjacent grave, but your cursor is still looking at the grave you spawned in on
+3. Mine the grave and dirt-block below you
+4. Wait a split second
+5. Walk to the right to catch the dirt-block. Keep your (x, z) coordinates at the position you just spawned in on, so that the hole you just jumped down into is patched up by another piece of grave-dirt
+6. Perish and respawn
+
+This method can be automated using [AutoHotKey](https://autohotkey.com), though you will still need to idle in the void at night and during thunderstorms. For steps 2 and 5, it's convenient to expand your spawn-platform to 22×20 first. I finished farming the dirt within two days.
+
+A more convenient method would be: Get torches, ensure your spawn-platform contains no slime-chunks, and light up the whole platform (somehow). That way, you could farm dirt without having to idle at night or during thunderstorms. However, there is some glitch involving lighting: Whenever I respawned on the lit-up spawn-platform, some blocks randomly had their light-level reduced to a level that mobs could spawn on. This was not just cosmetic, mobs _could_ spawn there. So I couldn't use that method.
+
+
+
+## Getting Torches
+
+Torches provide light, can be farmed very easily and quickly AFK (even without AutoHotKey), and can be used as building-material using draconic-place, where they can create staircases and easy bridges.
+
+Before getting torches, you can (and should) spawn-proof individual blocks draconic-placing an item on them, likely the skull-item for now. Open all the graves (grave-skeletons don't shoot arrows), and create some extra graves near your spawn-platform, which should contain either dirt or skulls but not both. Spawn-proof and label those storage-graves by draconic-placing the item they contain on top. 
+
+You will likely not be able to do this within a single day, so while there are still valid spawn-locations you must keep idling in the void at night and during thunderstorms. You can also plan ahead and start building the foundation of your mob farm, skipping spawn-proofing some blocks.
+
+
+### Early Mob Farm
+Our mob-farm has the following requirements:
+
+- Able to spawn skeletons
+- Physically isolated spawn-chambers, to avoid mobs hurting each other
+- Able to extract any singular mob from the farm without extracting any other mob
+
+The following design is provably optimal, in the sense of minimising the amount of dirt required. A top-down perspective of the farm: `██`=Dirt, `{}`=SpawnLocation:
+
+```
+  ██  ██  ██  ██  ██  ██  ██  ██  ██  ██      
+██{}██{}██{}██{}██{}██{}██{}██{}██{}██{}██    
+  ██{}██{}██{}██{}██{}██{}██{}██{}██{}██{}██  
+    ██  ██  ██  ██  ██  ██  ██  ██  ██  ██    
+```
+
+Each spawn-chamber must be 3 blocks tall, because some skeletons or zombies can spawn as giants, even in 2-block-tall spaces, and will suffocate in the ceiling. We need ceilings to protect mobs from sunlight and rain, and prevent some mobs from teleporting. To avoid enderman-spawns (which we don't care for at best, and will pick apart your farm at worst), you should draconic-place some item on the underside of the ceiling. Remember to spawn-proof the top of every block that's exposed to the sky.
+
+<!-- TODO: Add image of outside, viewed from the top to display spawn-proofed tops -->
+<!-- TODO: Add image of cut-open farm, revealing the draconic-placed cealing inside -->
+
+You could try saving some dirt by making some of the walls out of draconic-placed skull-items, but that might leek out small mobs and will prevent spawns during daytime, and you should have more than enough dirt right now anyway.

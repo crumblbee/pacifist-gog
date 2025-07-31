@@ -81,4 +81,4 @@ Each spawn-chamber must be 3 blocks tall, because some skeletons or zombies can 
 <!-- TODO: Add image of outside, viewed from the top to display spawn-proofed tops -->
 <!-- TODO: Add image of cut-open farm, revealing the draconic-placed cealing inside -->
 
-You could try saving some dirt by making some of the walls out of draconic-placed skull-items, but that might leek out small mobs and will prevent spawns during daytime, and you should have more than enough dirt right now anyway.
+You could try saving some dirt by making some of the walls out of draconic-placed skull-items, but that might leak out small mobs and will prevent spawns during daytime, and you should have more than enough dirt right now anyway.

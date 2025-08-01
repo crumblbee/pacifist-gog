@@ -114,5 +114,12 @@ Remember to spawn-proof the top of every block that's exposed to the sky.
 
 I decided to do 3 rows, each containing 18 chambers. It will take a while to get torch-skeletons, especially gatling torch-skeletons. More chambers are always better (you can just construct more while waiting for spawns in the others), but 54 chambers are enough for now. You could try saving some dirt by making some of the walls out of draconic-placed skull-items, but that might leak out small mobs and will prevent spawns during daytime, and you should have more than enough dirt right now anyway.
 
-Due to hardcore darkness, you can only really check the chambers during daytime. That's okay though, spawns take a while.
+Due to hardcore darkness, you can only really check the chambers during daytime. That's okay though, spawns take a while. This is what my map looked like after a night. Almost all chambers contained a mob (though the map only shows them in a certain radius around you).
 
+![Map view of chambers, displaying spawned in mobs](assets/early-spawn-chambers-map.png)
+
+Check all chambers that could contain a torch-skeleton, i.e. all mobs that either have no icon (could be a special mob skeleton), or a skeleton-icon (vanilla skeleton). Check individual chambers by digging out the bottom-most dirt-block and peeking inside, unless you hear a baby-zombie inside.
+
+Gatling skeletons are the most desirable mob. The skeletons might poke their arrows through the walls, making checking them easier. They look like this:
+
+<!-- TODO -->

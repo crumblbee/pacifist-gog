@@ -55,7 +55,9 @@ A more convenient method would be: Get torches, ensure your spawn-platform conta
 
 Torches provide light, can be farmed very easily and quickly AFK (even without AutoHotKey), and can be used as building-material using draconic-place, where they can create staircases and easy bridges.
 
-Before getting torches, you can (and should) spawn-proof individual blocks draconic-placing an item on them, likely the skull-item for now. Open all the graves (grave-skeletons don't shoot arrows), and create some extra graves near your spawn-platform, which should contain either dirt or skulls but not both. Spawn-proof and label those storage-graves by draconic-placing the item they contain on top. 
+Before getting torches, you can (and should) spawn-proof individual blocks draconic-placing an item on them, likely the skull-item for now. Open all the graves (grave-skeletons don't shoot arrows), and create some extra graves near your spawn-platform, which should contain either dirt or skulls but not both. Spawn-proof and label those storage-graves by draconic-placing the item they contain on top.
+
+![Eight storage graves off to the side of the partially spawn-proofed spawn-platform. Four of them are covered with draconic-placed skulls, the other four are covered with draconic-placed dirt](assets/unsophisticated-storage.png)
 
 You will likely not be able to do this within a single day, so while there are still valid spawn-locations you must keep idling in the void at night and during thunderstorms. You can also plan ahead and start building the foundation of your mob farm, skipping spawn-proofing some blocks.
 

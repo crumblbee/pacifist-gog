@@ -48,7 +48,7 @@ For an early spawn-chamber and later projects, pacifists will need a lot more di
 - If you plan on building a water-containment-platform, at least an additional 2500 dirt (about 39 stacks). This is somewhat optional, but if you mess up during the warp-age, you can cause squid to spawn and fall into the void. If that happens, it feels appropriate for my run to be forfeit, as such an accident could have been prevented by building the water-containment-platform, so I will treat the water-containment-platform as required.
 - A decent amount of additional dirt for bridges and early spawn-chambers.
 
-Later on, ic2-crops will also require lots of dirt, but it will be easier to get by that point, and we will conveniently be able to farm dirt for an additional 8 hours for basically free while we're transitioning from the dirt-age to the warp-age.
+Later on, ic2-crops will also require lots of dirt, but it will be easier to source then, and we will conveniently be able to farm dirt for an additional 8 hours for basically free while we're transitioning from the dirt-age to the warp-age.
 
 In total, I decided to get at least 5000 dirt. Exploding dirt-creepers is banned by the ruleset. At 6 seconds per death, farming 5000 dirt via grave-dirt takes at least 8 hours, _not_ counting time spent idling in the void at night or during thunderstorms.
 
@@ -84,17 +84,17 @@ Before getting torches, you can (and should) spawn-proof individual blocks draco
 
 ![Eight storage graves off to the side of the partially spawn-proofed spawn-platform. Four of them are covered with draconic-placed skulls, the other four are covered with draconic-placed dirt](assets/unsophisticated-storage.png)
 
-You will likely not be able to do this within a single day, so while there are still valid spawn-locations you must keep idling in the void at night and during thunderstorms. You can also plan ahead and start building the foundation of your mob farm, skipping spawn-proofing some blocks.
+You will likely not be able to do this within a single day, so while there are still valid spawn-locations you must keep idling in the void at night and during thunderstorms. You can also plan ahead and start building the foundation of your spawn chambers, which skips spawn-proofing some blocks.
 
 
-### Early Mob Farm
-Our mob-farm has the following requirements:
+### Early Spawn Chambers
+Our spawn-chambers have the following requirements:
 
 - Able to spawn skeletons
 - Physically isolated spawn-chambers, to avoid mobs hurting each other
-- Able to extract any singular mob from the farm without extracting any other mob
+- Able to extract any singular mob from the chambers without extracting any other mob
 
-The following design is provably optimal, in the sense of minimising the amount of dirt required. A top-down perspective of the farm: `██`=Dirt, `{}`=SpawnLocation:
+The following design is provably optimal, in the sense of minimising the amount of dirt required. A top-down perspective of the chambers: `██`=Dirt, `{}`=SpawnLocation:
 
 ```
   ██  ██  ██  ██  ██  ██  ██  ██  ██  ██      
@@ -103,9 +103,16 @@ The following design is provably optimal, in the sense of minimising the amount 
     ██  ██  ██  ██  ██  ██  ██  ██  ██  ██    
 ```
 
-Each spawn-chamber must be 3 blocks tall, because some skeletons or zombies can spawn as giants, even in 2-block-tall spaces, and will suffocate in the ceiling. We need ceilings to protect mobs from sunlight and rain, and prevent some mobs from teleporting. To avoid enderman-spawns (which we don't care for at best, and will pick apart your farm at worst), you should draconic-place some item on the underside of the ceiling. Remember to spawn-proof the top of every block that's exposed to the sky.
+Each spawn-chamber must be 3 blocks tall, because some skeletons or zombies can spawn as giants, even in 2-block-tall spaces, and will suffocate in the ceiling. We need ceilings to protect mobs from sunlight and rain, and prevent some mobs from teleporting. To avoid enderman-spawns (which we don't care for at best, and will pick apart your walls at worst), you should draconic-place some item on the underside of the ceiling, like this:
 
-<!-- TODO: Add image of outside, viewed from the top to display spawn-proofed tops -->
-<!-- TODO: Add image of cut-open farm, revealing the draconic-placed cealing inside -->
+![Sliced open spawn chambers, revealing the draconic-placed skull beneath the cealing](assets/early-spawn-chambers-open.png)
 
-You could try saving some dirt by making some of the walls out of draconic-placed skull-items, but that might leak out small mobs and will prevent spawns during daytime, and you should have more than enough dirt right now anyway.
+Remember to spawn-proof the top of every block that's exposed to the sky.
+
+![Finished chambers, viewed from above](assets/early-spawn-chambers-above.png)
+![Finished chambers, viewed from ground level](assets/early-spawn-chambers-ground.png)
+
+I decided to do 3 rows, each containing 18 chambers. It will take a while to get torch-skeletons, especially gatling torch-skeletons. More chambers are always better (you can just construct more while waiting for spawns in the others), but 54 chambers are enough for now. You could try saving some dirt by making some of the walls out of draconic-placed skull-items, but that might leak out small mobs and will prevent spawns during daytime, and you should have more than enough dirt right now anyway.
+
+Due to hardcore darkness, you can only really check the chambers during daytime. That's okay though, spawns take a while.
+

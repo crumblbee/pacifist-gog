@@ -13,15 +13,40 @@ However, pacifists must concern themselves with mobs at night: Spawned mobs coul
 
 After spending at least 80 minutes dying painfully, you have your spawn-platform! Check for slime-chunks, and place journeymap-waypoints at the four corners of the platform.
 
+## Planning Ahead: Preparations for Getting To LV
+
+LV requires vacuum-tubes, which require molds, requiring a smeltery, requiring lava, which requires villagers, who in turn **require a golden apple**. Golden apples can not be crafted until LV, so we will have to obtain them some other way for now.
+
+In a non-pacifist run, you would get the golden apple from lootbags (sourced from a mob farm), or by bartering lucrum (also sourced from a mob-farm) with a [Pech](https://thaumcraft-4.fandom.com/wiki/Pech). Pacifists can't obtain lootbags, so we must trade with Pechs. Without a mob farm, it is extremely difficult for us to source lucrum, but there are three ways:
+
+- Some ic2 crops, which will likely require at least a stack of cropsticks to crossbreed. Crafting cropsticks requires tools, which in turn require metal, which pacifists can (for now) only obtain via... Pech bartering. <!-- TODO: Add link to cropstick calculation -->
+- Emeralds, which [villagers passively shed](https://ftb.fandom.com/wiki/Natural_Shedding) every 3 hours (in expectation). This is only viable after you get your first golden apple.
+- Gold coins from a [warptheory warp-event](https://gtnh.miraheze.org/wiki/Thaumcraft_Tips#Appendix_2:_Warp_Events) (explained in more detail [below](#warp-jail))
+
+Thus, before we get crops or a golden apple, we must farm gold coins via warp-events.
+
+- If you give a Pech a gold-coin, they give you a golden apple with probability ≈0.21%, requiring 476 gold coins (in expectation) before you get your first golden apple.
+- If you play your cards right, you can get metal oreberries via crossbreeding by using ≈70 cropsticks (_in expectation_). Summing up the different metals Pech trades give you (and assuming you re-barter anything they give you), you get enough metal to make something like 2.5 cropsticks (in expectation) per traded gold coin, but this assumes fungibility of metals and ignores that you need a certain metal-threshold before you can make tools. Ballparking the numbers, let's say you need about 50 gold coins before you get metal oreberries (at which point, if you had infinite cobblestone to make mortars, you could make as many cropsticks as you'd like).
+
+Additionally, Pech will take 10 gold coins to be tamed (in expectation), and have a 1% chance of becoming untamed whenever you give them a gold-ingot.
+
+Farming gold-coins via warp-events takes a lot of effort to set up every time, and will almost certainly result in any tamed Pech despawning again. Thus, it's more efficient (in expectation) to play it safe and get more than 50 gold coins. I will aim to get something like **84 gold coins** (in expectation) before attempting to tame a Pech.
+
+Getting 84 gold coins will require AFK-ing **for a week** (168 hours!!!) in warp-jail (in expectation). Without AutoHotKey, you would have to check your game roughly every 10 minutes, by the way.
+
+To make this AFK session as painless (for us, and for the mobs) as possible, we must set up a warp-jail. This will require lots of resources, but will be worth it: Without a warp-jail, you are forced to idle at night and during rain (which will at least _double_ the time we must spend in warp-jail), and you can't realistically use AutoHotKey for AFK-ing.
+
+### Warp-Jail
+
 
 ## Getting More Dirt
 
-Sadly, the pain has just begun. For an early mob-farm and later projects, pacifists will need a lot more dirt. You will need:
+For an early spawn-chamber and later projects, pacifists will need a lot more dirt. You will need:
 
 - 400 dirt for your spawn-platform (these are already placed now, congrats!)
-- At least 1250 dirt (about 19.5 stacks) for the water-cage in the warp-age <!-- TODO: add link -->
+- At least 1250 dirt (about 19.5 stacks) for the water-cage of the warp-jail <!-- TODO: add link -->
 - If you plan on building a water-containment-platform, at least an additional 2500 dirt (about 39 stacks). This is somewhat optional, but if you mess up during the warp-age, you can cause squid to spawn and fall into the void. If that happens, it feels appropriate for my run to be forfeit, as such an accident could have been prevented by building the water-containment-platform, so I will treat the water-containment-platform as required.
-- A decent amount of additional dirt for bridges and an early mob-farm.
+- A decent amount of additional dirt for bridges and early spawn-chambers.
 
 Later on, ic2-crops will also require lots of dirt, but it will be easier to get by that point, and we will conveniently be able to farm dirt for an additional 8 hours for basically free while we're transitioning from the dirt-age to the warp-age.
 

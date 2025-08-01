@@ -123,3 +123,5 @@ Check all chambers that could contain a torch-skeleton, i.e. all mobs that eithe
 Gatling skeletons are the most desirable mob. The skeletons might poke their arrows through the walls, making checking them easier. They look like this:
 
 <!-- TODO -->
+
+If bats escape from the chambers, they might fly into the void and suffocate, so you should quickly despawn them by jumping into the void yourself.
